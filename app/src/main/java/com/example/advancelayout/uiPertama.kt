@@ -40,17 +40,20 @@ fun ActivitasPertama(modifier: Modifier) {
             fontWeight = FontWeight.Bold
         )
     }
-        Text(
-            text = stringResource(id = R.string.univ),
-            fontSize = 22.sp)
-        Spacer(modifier = Modifier.height(25.dp))
-        Card(modifier = Modifier
+    Text(
+        text = stringResource(id = R.string.univ),
+        fontSize = 22.sp
+    )
+    Spacer(modifier = Modifier.height(25.dp))
+    Card(
+        modifier = Modifier
             .fillMaxWidth(fraction = 1f)
             .padding(all = 12.dp),
-            colors = CardDefaults.cardColors(
-                containerColor = Color.DarkGray
-        )){
-        Row(){
+        colors = CardDefaults.cardColors(
+            containerColor = Color.DarkGray
+        )
+    ) {
+        Row() {
             val gambar = painterResource(id = R.drawable.umy_logo)
             Image(
                 painter = gambar,
@@ -58,7 +61,7 @@ fun ActivitasPertama(modifier: Modifier) {
                 modifier = Modifier.size(100.dp).padding(all = 5.dp)
             )
             Spacer(modifier = Modifier.width(30.dp))
-            Column(){
+            Column() {
                 Text(
                     text = stringResource(id = R.string.nama),
                     fontSize = 30.sp,
@@ -73,4 +76,6 @@ fun ActivitasPertama(modifier: Modifier) {
             }
 
         }
+    }
+}
 
