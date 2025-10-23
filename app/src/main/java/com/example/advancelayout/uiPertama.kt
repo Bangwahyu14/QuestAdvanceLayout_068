@@ -24,7 +24,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-private val Unit.DarkGray: Color
 
 
 @Composable
@@ -55,6 +54,7 @@ fun ActivitasPertama(modifier: Modifier) {
             val gambar = painterResource(id = R.drawable.umy_logo)
             Image(
                 painter = gambar,
+                contentDescription = null,
                 modifier = Modifier.size(100.dp).padding(all = 5.dp)
             )
             Spacer(modifier = Modifier.width(30.dp))
